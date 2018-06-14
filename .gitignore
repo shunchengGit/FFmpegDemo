@@ -47,3 +47,11 @@ DerivedData
 *.xcuserstate
 Build/
 Index/
+
+thin/
+scratch/
+ffmpeg-3.4.2/
+FFmpeg-iOS/
+
+
+

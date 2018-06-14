@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5C00182020D2734A003AF3BD /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C00181F20D2734A003AF3BD /* libz.tbd */; };
 		5CF0BAF520D2514E00721F1F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CF0BAF420D2514E00721F1F /* AppDelegate.m */; };
 		5CF0BAF820D2514E00721F1F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CF0BAF720D2514E00721F1F /* ViewController.m */; };
 		5CF0BAFB20D2514E00721F1F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5CF0BAF920D2514E00721F1F /* Main.storyboard */; };
@@ -32,6 +33,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5C00181F20D2734A003AF3BD /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		5CF0BAF020D2514E00721F1F /* FFmpegDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FFmpegDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CF0BAF320D2514E00721F1F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		5CF0BAF420D2514E00721F1F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -174,6 +176,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C00182020D2734A003AF3BD /* libz.tbd in Frameworks */,
 				5CF0BBBE20D2524B00721F1F /* CoreImage.framework in Frameworks */,
 				5CF0BBBC20D2524500721F1F /* OpenGLES.framework in Frameworks */,
 				5CF0BBBA20D2522D00721F1F /* AVFoundation.framework in Frameworks */,
@@ -428,6 +431,7 @@
 		5CF0BBAC20D251EF00721F1F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5C00181F20D2734A003AF3BD /* libz.tbd */,
 				5CF0BBBD20D2524B00721F1F /* CoreImage.framework */,
 				5CF0BBBB20D2524500721F1F /* OpenGLES.framework */,
 				5CF0BBB920D2522D00721F1F /* AVFoundation.framework */,
