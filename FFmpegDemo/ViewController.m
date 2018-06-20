@@ -83,6 +83,19 @@
         _fps = 30;
     }
     
+    AVCodec *codec = avcodec_find_decoder(_stream->codecpar->codec_id);
+    _codecContext = avcodec_alloc_context3(codec);
+    _codecContext->opaque = NULL;
+    _codecContext->extradata = _stream->codecpar->extradata;
+    _codecContext->extradata_size = _stream->codecpar->extradata_size;
+    _codecContext->width = _stream->codecpar->width;
+    _codecContext->height = _stream->codecpar->height;
+    _codecContext->coded_width = _stream->codecpar->width;
+    _codecContext->coded_height = _stream->codecpar->height;
+    _codecContext->pix_fmt = _stream->codecpar->format;
+    
+    int ret = avcodec_open2(_codecContext, codec, NULL);
+    
     _outputWidth = _codecContext->width;
     _outputHeight = _codecContext->height;
     
@@ -106,15 +119,19 @@
     
     while (av_read_frame(_formatContext, &packet) >= 0) {
         if (packet.stream_index == _videoStream) {
-            if (!_frame) {
-                _frame = av_frame_alloc();
-            } else {
+            if (_frame) {
+                if(_frame->data[0] != NULL) {
+                    av_frame_unref(_frame);
+                }
                 av_frame_free(&_frame);
-                _frame = NULL;
             }
+            _frame = av_frame_alloc();
             
             int rtn1 = avcodec_send_packet(_codecContext, &packet);
             int rtn2 = avcodec_receive_frame(_codecContext, _frame);
+            if (rtn2 == 0) {
+                break;
+            }
             break;
         }
     }
