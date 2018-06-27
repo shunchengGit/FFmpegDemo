@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5C99F86A20E3468E00548F71 /* FDAudioManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C99F86920E3468E00548F71 /* FDAudioManager.m */; };
 		659D43F120DFA6F00097A48E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 659D43F020DFA6F00097A48E /* AppDelegate.m */; };
 		659D43F420DFA6F00097A48E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 659D43F320DFA6F00097A48E /* ViewController.m */; };
 		659D43F720DFA6F00097A48E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 659D43F520DFA6F00097A48E /* Main.storyboard */; };
@@ -34,6 +35,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5C99F86820E3468E00548F71 /* FDAudioManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDAudioManager.h; sourceTree = "<group>"; };
+		5C99F86920E3468E00548F71 /* FDAudioManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FDAudioManager.m; sourceTree = "<group>"; };
 		659D43EC20DFA6F00097A48E /* FFmpegDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FFmpegDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		659D43EF20DFA6F00097A48E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		659D43F020DFA6F00097A48E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -232,6 +235,8 @@
 				659D43FA20DFA6F00097A48E /* LaunchScreen.storyboard */,
 				659D43FD20DFA6F00097A48E /* Info.plist */,
 				659D43FE20DFA6F00097A48E /* main.m */,
+				5C99F86820E3468E00548F71 /* FDAudioManager.h */,
+				5C99F86920E3468E00548F71 /* FDAudioManager.m */,
 			);
 			path = FFmpegDemo;
 			sourceTree = "<group>";
@@ -530,6 +535,7 @@
 			files = (
 				659D43F420DFA6F00097A48E /* ViewController.m in Sources */,
 				659D43FF20DFA6F00097A48E /* main.m in Sources */,
+				5C99F86A20E3468E00548F71 /* FDAudioManager.m in Sources */,
 				659D43F120DFA6F00097A48E /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
